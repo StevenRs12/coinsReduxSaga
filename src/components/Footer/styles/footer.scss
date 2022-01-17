@@ -1,0 +1,10 @@
+.footer {
+  &__container {
+    text-align: center;
+    background-color: $ligth-gray;
+  }
+  &__text {
+    @include title-s;
+    color: $dark-gray;
+  }
+}

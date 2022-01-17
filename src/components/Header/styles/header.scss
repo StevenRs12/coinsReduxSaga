@@ -1,0 +1,26 @@
+.header {
+  &__container {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    background-color: $primary;
+    padding: 16px;
+  }
+  &__title {
+    @include title-l;
+  }
+  &__sub-title {
+    @include title-m;
+    margin-top: 10px;
+  }
+  &__image {
+    width: 62px;
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+  &__btn-home {
+    @include btn-primary;
+    position: absolute;
+    right: 20px;
+  }
+}

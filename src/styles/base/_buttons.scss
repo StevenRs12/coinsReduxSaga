@@ -1,0 +1,26 @@
+@mixin btn {
+  border-radius: 8px;
+  min-width: 150px;
+  min-height: 38px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@mixin btn-primary {
+  @include btn;
+  background-color: $secondary;
+  &:hover {
+    background-color: $dark-green;
+    color: white;
+  }
+}
+
+@mixin btn-secondary {
+  @include btn;
+  background-color: $ligth-green;
+  color: black;
+  &:hover {
+    background-color: $dark-green;
+    color: white;
+  }
+}

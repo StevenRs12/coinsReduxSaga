@@ -1,0 +1,9 @@
+.info-crypto {
+  &-title {
+    @include title-l;
+  }
+  &__container {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

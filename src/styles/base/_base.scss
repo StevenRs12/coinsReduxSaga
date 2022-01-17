@@ -1,0 +1,30 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0px;
+}
+
+@mixin title-l {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+@mixin title-m {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+@mixin title-s {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.main-layout {
+  height: calc(100vh - 142px - 50px);
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #f6ffee;
+}

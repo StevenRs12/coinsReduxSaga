@@ -1,0 +1,16 @@
+//Base
+@import "./base/settings";
+@import "./base/base";
+@import "./base/buttons";
+
+//Components
+@import "../components/Header/styles/header.scss";
+@import "../components/Footer/styles/footer.scss";
+
+//Pages
+@import "../pages/DetailsCrypto/styles/details-crypto.scss";
+@import "../pages/InfoCryptos/styles/info-crypto.scss";
+@import "../pages/HomeSection/styles/home-section.scss";
+
+// Table
+@import "react-bootstrap-table2-paginator/dist/react-bootstrap-table2-paginator.min.css";

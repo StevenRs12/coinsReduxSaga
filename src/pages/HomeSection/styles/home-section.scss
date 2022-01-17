@@ -1,0 +1,32 @@
+.home {
+  &__container {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    &-text {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-img {
+      padding: 16px;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  &__text {
+    @include title-l;
+    margin-bottom: 32px;
+    color: white;
+    letter-spacing: 4px;
+  }
+  &__line {
+    margin: 32px 0;
+  }
+  &__btn {
+    @include btn-secondary;
+    margin-top: 32px;
+  }
+}
