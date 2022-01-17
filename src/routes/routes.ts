@@ -26,8 +26,8 @@ export const routes: Route[] = [
         name: "InfoCryptos",
     },
     {
-        path: "details-crytpo",
-        to: "/details-crytpo",
+        path: "details-crytpo/:id",
+        to: "/details-crytpo/:id",
         Component: DetailsCrypto,
         name: "DetailsCrypto",
     },

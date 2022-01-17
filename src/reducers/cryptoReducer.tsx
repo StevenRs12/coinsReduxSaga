@@ -7,12 +7,14 @@ interface Action {
 
 export const cryptoReducer = (state = {}, action: Action) => {
   switch (action.type) {
-    case types.setAllsCryptos:
+    case types.setAllCryptos:
       return {
         data: action.payload,
       };
-    case types.CryptoDetail:
-      return {};
+    case types.setCryptoById:
+      return {
+        data: action.payload,
+      };
 
     default:
       return state;

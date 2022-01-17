@@ -1,7 +1,8 @@
 import { takeLatest } from "redux-saga/effects";
 import { types } from "../types/types";
-import { handelGetAllCryptos } from "./handlers/crypto";
+import { handleGetAllCryptos, handleGetCryptoById } from "./handlers/crypto";
 
 export function* watcherSaga() {
-  yield takeLatest(types.getAllsCryptos, handelGetAllCryptos);
+  yield takeLatest(types.getCryptoDetailsById, handleGetCryptoById);
+  yield takeLatest(types.getAllsCryptos, handleGetAllCryptos);
 }

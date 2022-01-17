@@ -1,0 +1,25 @@
+tbody {
+  tr {
+    height: 50px;
+    background-color: $ligth-blue;
+    &:hover {
+      background-color: $dark-blue;
+      color: white;
+    }
+  }
+}
+
+thead {
+  tr {
+    height: 56px;
+    background-color: $dark-blue;
+    color: white;
+  }
+}
+
+th,
+td {
+  width: 150px;
+  text-align: initial;
+  padding: 10px;
+}

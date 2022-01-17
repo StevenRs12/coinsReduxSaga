@@ -1,5 +1,6 @@
 export const types = {
-  setAllsCryptos: "[Crypto] SetAll",
+  setAllCryptos: "[Crypto] SetAll",
   getAllsCryptos: "[Crypto] GetAll",
-  CryptoDetail: "[Crypto] GetById",
+  setCryptoById: "[Crypto] SetById",
+  getCryptoDetailsById: "[Crypto] GetById",
 };
