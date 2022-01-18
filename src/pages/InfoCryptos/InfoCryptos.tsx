@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getAllCryptos } from "../../actions/cryptoActions";
 import { cryptoInterface } from "../../interfaces/crypto.interfaces";
 import { numberFormat } from "../../utils/utils";
+import { Loader } from "../../components/Loader";
 
 export const InfoCryptos = () => {
   const namespace = "info-crypto";
@@ -33,6 +34,9 @@ export const InfoCryptos = () => {
     setWordFilter(word.toLowerCase());
     setCurrentPage(1);
   };
+  if (currentCoins === undefined) {
+    return <Loader />;
+  }
   return (
     <div className={`${namespace}__container`}>
       <label className={`${namespace}__title`}>

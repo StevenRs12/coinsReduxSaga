@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getCryptoById } from "../../actions/cryptoActions";
 import { detailCoinMarketInterface } from "../../interfaces/crypto.interfaces";
 import { numberFormat } from "../../utils/utils";
+import { Loader } from "../../components/Loader";
 const coinImg = require("../../assets/images/coin.png");
 
 export const DetailsCrypto = () => {
@@ -18,6 +19,9 @@ export const DetailsCrypto = () => {
     (state: any) => state?.crypto?.data
   );
   const { infoCoin, infoMarkets } = cryptosInfo;
+  if (infoCoin === undefined || infoMarkets === undefined) {
+    return <Loader />;
+  }
   return (
     <div className={`${namespace}__container`}>
       {infoCoin?.map((coin) => (
