@@ -1,0 +1,57 @@
+.details-crypto {
+  &__container {
+    margin: auto;
+  }
+  &__container-img {
+    width: 166px;
+    position: absolute;
+    right: -44px;
+    top: -39px;
+  }
+  &__card-title {
+    border: solid 1px $ligth-green;
+    background-color: $white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 1px $dark-green;
+    margin-bottom: 32px;
+    position: relative;
+    width: 400px;
+  }
+  &__container-title {
+    margin: auto;
+  }
+  &__container-sub-title {
+    margin: auto;
+    margin-top: 14px;
+  }
+  &__title {
+    @include title-l;
+  }
+  &__sub-title {
+    @include title-m;
+  }
+  &__container-markets {
+    display: flex;
+    padding: 8px;
+    text-align: center;
+    border: solid 1px $secondary;
+    border-radius: 8px;
+    margin-top: 2px;
+  }
+  &__container-markets-head {
+    display: flex;
+    padding: 8px;
+    background-color: $primary;
+    border-radius: 8px;
+    text-align: center;
+  }
+  &__market-item {
+    width: 380px;
+  }
+}
+
+.text-semibold {
+  font-weight: 700;
+  @include title-m;
+}

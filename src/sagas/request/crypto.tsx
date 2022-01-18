@@ -15,3 +15,11 @@ export async function requestGetCryptoById(id: string) {
     })
   ).json();
 }
+
+export async function requestGetMarketsById(id: string) {
+  return (
+    await fetch(urlAPICrypto + "coin/markets/?id=" + id, {
+      method: "GET",
+    })
+  ).json();
+}

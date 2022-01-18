@@ -1,6 +1,8 @@
 .info-crypto {
-  &-title {
-    @include title-l;
+  &__title {
+    @include title-m;
+    margin-bottom: 16px;
+    display: flex;
   }
   &__container {
     margin: auto;
@@ -14,5 +16,29 @@
   }
   &__pagination {
     display: flex;
+    justify-content: center;
+    padding: 8px;
+    &-info {
+      text-align: center;
+    }
+  }
+  &__page {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+  }
+  &__btn {
+    @include btn-pagination;
+  }
+  &__input-text {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  &__search {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
   }
 }

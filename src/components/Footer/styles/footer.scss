@@ -2,9 +2,13 @@
   &__container {
     text-align: center;
     background-color: $ligth-gray;
+    border-radius: 16px 16px 0 0;
+    height: 36px;
+    padding: 16px;
   }
   &__text {
     @include title-s;
     color: $dark-gray;
+    margin-top: 8px;
   }
 }

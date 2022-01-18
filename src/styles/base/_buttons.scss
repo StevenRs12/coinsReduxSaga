@@ -24,3 +24,14 @@
     color: white;
   }
 }
+
+@mixin btn-pagination {
+  width: 40px;
+  border-radius: 4px;
+  background-color: $ligth-green;
+  color: black;
+  &:hover {
+    background-color: $dark-green;
+    color: white;
+  }
+}

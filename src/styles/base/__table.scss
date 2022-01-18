@@ -1,9 +1,16 @@
 tbody {
   tr {
-    height: 50px;
-    background-color: $ligth-blue;
+    height: 44px;
+    background-color: $ligth-green;
     &:hover {
-      background-color: $dark-blue;
+      background-color: $primary;
+      color: white;
+    }
+  }
+  tr:nth-child(2n + 1) {
+    background-color: $white;
+    &:hover {
+      background-color: $primary;
       color: white;
     }
   }
@@ -12,14 +19,16 @@ tbody {
 thead {
   tr {
     height: 56px;
-    background-color: $dark-blue;
+    background-color: $dark-green;
     color: white;
+    @include title-m;
   }
 }
 
 th,
 td {
-  width: 150px;
+  width: 180px;
   text-align: initial;
   padding: 10px;
+  text-align: center;
 }
